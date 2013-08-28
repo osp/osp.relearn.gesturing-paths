@@ -2,12 +2,12 @@ prologues := 3;     % sortie EPS
 
 beginfig(1);
 
-pickup pencircle scaled 1;
+pickup pencircle scaled 5;
 
 % PARTICIPANT A
-draw (10,22) .. (34,78) ... (10,10) -- (11,11) .. (4,7) ... (1,1) dashed evenly withcolor (1,1,0);
+draw (50,50) -- (100,300) -- (150,50) -- (150,0) -- (25,0) -- (100,400)--(175,50)--(15,50)--(100,600)--(200,70)--(0,0) dashed evenly withcolor (1,.5,0);
 % HERE STARTS THE CONNECTOR WHICH SHOULD CONNECT TO YOUR LAST COORDINATE:
-draw (10,10) ..
+draw (0,0) ..
 % //////////////////////////////////////
 % PARTICIPANT B
 % THIS IS THE OTHER END OF THE CONNECTOR, WHICH SHOULD CONNECT TO YOUR FIRST COORDINATE:
@@ -17,7 +17,7 @@ draw (600,12) .. (5,2) ...
 % //////////////////////////////////////
 % PARTICIPANT C
 (12,25) ... (4,67) ..(5, 68) -- (13,42);
-draw (13,42) .. (64,178) ... (450,50) dashed evenly withcolor (1,3,7);
+drawarrow (13,42) .. (64,178) .. (65,179) .. (66,180) -- (67,181) .. (68,182) ... (450,50)  withcolor green;
 draw (450,50) --
 % //////////////////////////////////////
 % PARTICIPANT D
