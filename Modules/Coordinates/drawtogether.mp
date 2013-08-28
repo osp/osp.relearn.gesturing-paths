@@ -30,7 +30,7 @@ draw
 
 % //////////////////////////////////////
 % PARTICIPANT E (YOU ARE THE LAST ONE)
-
+(0,0) .. (8,5) .. (15,15) .. (7,7) .. (10,1) dashed evenly withcolor (1,1,0);
 %THIS IS THE END OF THE DRAWING
 ;
 endfig;
