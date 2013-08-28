@@ -1,0 +1,14 @@
+% a very basic metafont setup
+
+mode_setup; q:=savepen; 
+w#:=2.5pt#; font_quad:=w#; designsize:=8w#;  % global dimension definitions
+
+% characters: copy paste input for new glyph 
+
+input a
+input b
+input c
+
+
+end.
+
