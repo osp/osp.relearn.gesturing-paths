@@ -5,7 +5,7 @@ height:=he*u;              % height
 width:=wi*u;		%width
 graisse := 25;
 
-beginchar("a",w#,w#,0);  
+beginchar("5",w#,w#,0);  
 
   for i=0 upto he:
     draw (0, i*u)--(width, i*u) withcolor .7white;
@@ -18,8 +18,6 @@ beginchar("a",w#,w#,0);
 
 pickup pensquare xscaled 1 yscaled 20 rotated 120 ;
 
-draw (7u,1u)--(7u,5u){up}..(5u,9u)..(3u,7u);
-draw (7u,4u) .. (3u,2u)..(7u,3u);
+draw (7u,9u)--(3u,9u) -- (3u,5u) .. (7u,4u) ..  (3u,3u) ;
  
 endchar; 
-
