@@ -1,12 +1,13 @@
 making real fonts with metafont (.mf) files
 
-creating eps with mpost:
+creating eps with mpost (not nessecary for mf2pt1):
 
 mpost "&mfplain \mode=localfont; mag=100.375; input gesture.mf"
 
-creating otf / ttf with mf2pt1.pl  
 
+creating otf / ttf with mf2pt1.pl:  
 
+perl mf2pt1.pl gesture.mf
 
 
 
