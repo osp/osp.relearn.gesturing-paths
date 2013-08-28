@@ -5,7 +5,7 @@ pickup pencircle scaled .1
 
 draw
 % PARTICIPANT 0 (THIS IS A SAMPLE TO UNDERSTAND SYNTAX)
-% (3,4) .. (4,5) --- (12,12)
+(3,4) .. (4,5) --- (12,12)
 % YOUR OUTGOING CONNECTOR GOES HERE
 % --
 % //////////////////////////////////////
@@ -15,22 +15,22 @@ draw
 ---
 % //////////////////////////////////////
 % PARTICIPANT B
-(1,1) .. (2,2) .. (3,3) .. (4,4) -- (5,5) -- (6,6) -- (7,7) -- (8,8) -- (9,9) -- (10,10) -- (200,800)
+(1,1) .. (2,2) .. (3,3) .. (4,4) -- (5,5) -- (6,6) -- (7,7) -- (8,8) -- (9,9) -- (10,10) -- (2000,800)
 % YOUR OUTGOING CONNECTOR GOES HERE
 ...
 % //////////////////////////////////////
 % PARTICIPANT C
-(64,3)..(65,4)..(66,5)..(67,6)---(68,7)
+(64,3)..(65,4)--(66,5)..(67,6)---(68,7)
 % YOUR OUTGOING CONNECTOR GOES HERE
 ..
 % //////////////////////////////////////
 % PARTICIPANT D
-(7,6)--(-4,5)..(-7,16)
+(7,6)--(-4,5)--(-7,16)
 % YOUR OUTGOING CONNECTOR GOES HERE
 ---
 % //////////////////////////////////////
 % PARTICIPANT E (YOU ARE THE LAST ONE)
-(0,0) .. (8,5) .. (15,15) .. (7,7) .. (10,1) dashed evenly withcolor (1,0,0)
+(0,0) .. (8,5) .. (15,15) .. (7,7) .. (10,1) dashed evenly withcolor (1,0,1)
 %THIS IS THE END OF THE DRAWING
 ;
 endfig;
