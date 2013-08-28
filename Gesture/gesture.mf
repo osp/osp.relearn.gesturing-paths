@@ -10,6 +10,8 @@ input b
 input c
 input 5
 input S
+input A
+input Z
 
 end.
 
