@@ -1,0 +1,37 @@
+prologues := 3;     % sortie EPS
+
+beginfig(1);
+pickup pencircle scaled .1
+
+draw
+% PARTICIPANT 0 (THIS IS A SAMPLE TO UNDERSTAND SYNTAX)
+% (3,4)..(4,5)---(12,12)
+% YOUR OUTGOING CONNECTOR GOES HERE
+% --
+% //////////////////////////////////////
+% PARTICIPANT A
+
+% YOUR OUTGOING CONNECTOR GOES HERE
+
+% //////////////////////////////////////
+% PARTICIPANT B
+
+% YOUR OUTGOING CONNECTOR GOES HERE
+
+% //////////////////////////////////////
+% PARTICIPANT C
+
+% YOUR OUTGOING CONNECTOR GOES HERE
+
+% //////////////////////////////////////
+% PARTICIPANT D
+
+% YOUR OUTGOING CONNECTOR GOES HERE
+
+% //////////////////////////////////////
+% PARTICIPANT E (YOU ARE THE LAST ONE)
+
+%THIS IS THE END OF THE DRAWING
+;
+endfig;
+end
