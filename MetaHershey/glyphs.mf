@@ -1,0 +1,23 @@
+% some metafont definitions
+
+mode=luxo;
+mode_setup;
+define_pixels(s,u);
+define_blacker_pixels(px,py);
+
+% pen settings %
+
+pickup pencircle xscaled px yscaled py rotated 15;
+mypen:=savepen;
+
+% begin charater macro %
+
+def beginmychar(expr code, unit_width, h, d) =
+beginchar(code,unit_width*u#,h,d);
+pickup mypen;
+enddef;
+
+% input glyphs %
+
+input timesrb
+
