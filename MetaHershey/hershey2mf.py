@@ -12,8 +12,8 @@ f = open ('timesrb.mf', 'w')
 for char in chars:
 	f.write ('beginmychar (ASCII"{0}", 30u#, 30u#, 0);\n'.format (chr (k + 31)))
 	#f.write ('\tpickup pencircle\n')
-	#for line in char:
-		#f.write ('\tdraw {0} withcolor red;\n'.format (' -- '.join (['({0},{1})'.format (coord[0], int (coord[1]) * -1) for coord in line])))
+	for line in char:
+		f.write ('\tdraw {0} withcolor red;\n'.format (' -- '.join (['({0},{1})'.format (coord[0], int (coord[1]) * -1) for coord in line])))
 	
 	for line in char:
 		f.write ('\tdraw {0};\n'.format (' .. '.join (['({0}*u,{1}*u)'.format (coord[0], int (coord[1]) * -1) for coord in line])))
