@@ -2,7 +2,7 @@
  
 font_size:=10pt#;
 ht#:=10pt#;
-u#:=0.8pt#;
+u#:=1.9pt#;
 px#:=0.1pt#;
 py#:=0.1pt#;
 py#:=px#;
