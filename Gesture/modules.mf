@@ -8,5 +8,7 @@ draw(0u,0u)--(0u,10u); % module 3
 draw (8u,0u) .. (0u,5u) .. (8u,10u); % module 4
 draw (0u,10u) -- (7u,10u); % module 5
 draw (0u,0u) -- (4u, 15u); % module 6
+draw(3u,8.5u)...(0.7u,9u)..{down}(0u,5.5u); % module 7
+
 
 
