@@ -19,17 +19,9 @@
 
 MetaFlop Scpeci \= Environment \= \kill
 
-LORAINE \\  % Username
+METAFLOP \\  % Username
 
-This is the first column content
-
-This is the second column content
-
-This is the third column content
-
-This is the fourth column content
-
-    
+\input{testTex-tabbing.txt} % input parameter list    
 \end{tabbing}
 \end{multicols}
 \noindent
