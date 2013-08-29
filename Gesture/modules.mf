@@ -1,0 +1,12 @@
+u=10;
+
+
+%modules
+draw(0u,0u)--(0u,15u); % modules 1
+draw(0u,8u)..(4u,10u)..(7u,6u)--(7u,0u); % module 2
+draw(0u,0u)--(0u,10u); % module 3
+draw (8u,0u) .. (0u,5u) .. (8u,10u); % module 4
+draw (0u,10u) -- (7u,10u); % module 5
+draw (0u,0u) -- (4u, 15u); % module 6
+
+
