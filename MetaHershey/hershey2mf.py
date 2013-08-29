@@ -17,8 +17,8 @@ f.write ('w#:=15pt#; font_quad:=w#; designsize:=8w#;  % global dimension definit
 for char in chars:
 	f.write ('beginchar (ASCII"{0}", w#, w#, 0);\n'.format (chr (k + 31)))
 	#f.write ('\tpickup pencircle\n')
-	#for line in char:
-		#f.write ('\tdraw {0} withcolor red;\n'.format (' -- '.join (['({0},{1})'.format (coord[0], int (coord[1]) * -1) for coord in line])))
+	for line in char:
+		f.write ('\tdraw {0} withcolor red;\n'.format (' -- '.join (['({0},{1})'.format (coord[0], int (coord[1]) * -1) for coord in line])))
 	
 	for line in char:
 		f.write ('\tdraw {0};\n'.format (' .. '.join (['({0},{1})'.format (coord[0], int (coord[1]) * -1) for coord in line])))
