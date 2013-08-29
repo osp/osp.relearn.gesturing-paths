@@ -1,4 +1,8 @@
-u#=1pt#;
+u=10;
 
 
 %modules
+draw (8u,0u) .. (0u,5u) .. (8u,10u); % module 4
+draw (0u,10u) -- (7u,10u); % module 5
+draw (0u,0u) -- (4u, 15u); % module 6
+
