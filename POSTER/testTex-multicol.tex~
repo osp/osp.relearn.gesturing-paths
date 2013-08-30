@@ -9,7 +9,7 @@
 \begin{document}
 \pagestyle{empty}
 \tt       %% a typemachine version of the basic Metafont typeface Computer Modern
-\font\tinyfont=cmr5 at 20pt
+\font\tinyfont=cmr at 20pt
 
 \scriptsize
 
