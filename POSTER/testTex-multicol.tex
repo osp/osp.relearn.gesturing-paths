@@ -1,0 +1,40 @@
+\documentclass[a4paper]{report}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{multicol}
+\fontencoding {OT1}
+%\usepackage{mftinc}      %% try to include pretty print code
+
+\geometry{top=5cm}
+\begin{document}
+\pagestyle{empty}
+\tt       %% a typemachine version of the basic Metafont typeface
+
+\scriptsize
+
+\begin{multicols}{4}
+\raggedcolumns
+\noindent
+\begin{tabbing}
+
+MetaFlop Scpeci \= Environment \= \kill
+
+METAFLOP \\  % Username
+
+\input{testTex-tabbing.txt} % input parameter list    
+\end{tabbing}
+\end{multicols}
+\noindent
+\vspace{.5cm}
+\hrulefill
+\vspace{2cm}
+
+
+\noindent 
+ \begin{center}
+
+I M WRITING THIS DIRECTLY IN THE TEX FILE
+
+\end{center}
+
+\end{document}
