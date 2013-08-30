@@ -1,0 +1,62 @@
+%-*-tex-*-
+% Copyright Michael J. Ferguson, INRS-Telecommunications
+% All rights reserved. 
+
+%======== Multicolumn format ===========
+% These macros invoke multicolumnformat including balancing columns. 
+
+
+
+\newcount\numcolumns %\numcolumns =1
+\newdimen\firstcolumnoffset %\firstcolumnoffset= 0pt
+\newtoks\intercolumnsep %\intercolumnsep = {\hskip 2em}
+
+
+%--- check the remaining page height and set switch
+\newbox\m@ulticolumnbox   % accumulates multicolumn pages 
+\newbox\t@opmultibox  \newbox\testtop  
+\newbox\topmulticolumnbox  % user available box --- spans entire page
+\newbox\botmulticolumnbox  % user available box --- spans entire page
+\newbox\b@otmultibox  \newbox\testbot
+\newdimen\multicolpageshortfall \multicolpageshortfall = 1cm
+\newcount\m@ultistate  \m@ultistate = 0 % 1 is just into multicolumn
+                                        % 2 is just out of multicolumn
+\newcount\c@urrentcolumn \c@urrentcolumn = 1
+\def\currentcolumnnum{\the\c@urrentcolumn }
+
+\def\numberofcolumns{\c@urrentcolumn = 1 \afterassignment\c@omputehsize \numcolumns }
+\newtoks\everymulticolumnformat
+\newtoks\e@verymulticolumnformat
+\def\beginmulticolumnformat{\global\m@ultistate = 1
+                    \hrule height 0pt depth0pt % to force eject
+                    \eject \begingroup
+                   \def\ejectpage{\ejectcolumn\null
+                                \loop \relax 
+                                 \ifnum \c@urrentcolumn  < \numcolumns
+                                    \ejectcolumn\null
+                                    \advance\c@urrentcolumn  by 1 \relax
+                                      \repeat }
+                    \the\e@verymulticolumnformat
+                    \the\everymulticolumnformat }
+
+\newdimen\b@alancevsize \b@alancevsize=\vinnerpagesize
+\newif\ifb@alance 
+\def\balancecolumnsize {\global\b@alancetrue \global\b@alancevsize}
+
+\def\a@ddbalcomp{\dimen0=\pagetotal %natural residual
+                 \count255=\c@urrentcolumn \advance\count255 by -1 \relax
+                 \dimen2 = \vcolumnsize
+                 \multiply\dimen2 by \count255
+                 \advance\dimen0 by \dimen2
+                 \divide\dimen0 by \numcolumns
+                 \message{ <<Estimated Balanced Column Size : \the\dimen0 >> }
+                 \advance\dimen0 by -\b@alancevsize
+                 \message{ <<Estimated Addition: \the\dimen0 >> } 
+                }
+\def\endmulticolumnformat{\global\m@ultistate =2 \relax
+                 \a@ddbalcomp \ifb@alance\par\eject\else\ejectcolumn \fi
+                 \endgroup \numberofcolumns =1 
+                \ifdim\vsize<\vinnerpagesize\relax
+                  \hrule height0ptdepth0pt\fi } 
+              % checks to see if new page 
+
