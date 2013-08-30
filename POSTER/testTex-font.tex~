@@ -1,0 +1,29 @@
+\documentclass[a4paper]{report}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+% \{multicol} pour faire plusieurs colonnes.
+\fontencoding {OT1}
+
+\geometry{top=2cm}
+\begin{document}
+\pagestyle{empty}
+\tt % a type machine version of basic Metafont typeface.
+
+\font\tiny=font at 20pt     % Font to test // tiny, small
+% \baselineskip=203pt
+\big  
+% \begin{center}
+\begin{flushleft}
+\noindent
+
+% text for specimen:
+
+
+Discover HERSHEY'S Chocolate Brand products, recipes, seasonal \vspace{0.2}specials, nutrition information, watch commercials and much more
+
+\input{testTeXrourr.txt} % insert text
+
+\end{flushleft}
+%\end{center}
+
+\end{document}

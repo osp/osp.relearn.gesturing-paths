@@ -1,0 +1,4 @@
+beginchar("c",w#,w#,0); 
+  fill (0,12)--(w,4)--(w,20)--(4,20)--cycle; 
+endchar; 
+

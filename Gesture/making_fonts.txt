@@ -1,0 +1,34 @@
+making real fonts with metafont (.mf) files
+
+creating eps with mpost (not nessecary for mf2pt1):
+
+mpost "&mfplain \mode=localfont; mag=100.375; input gesture.mf"
+
+
+creating otf / ttf with mf2pt1.pl:  
+
+perl mf2pt1.pl gesture.mf
+
+
+
+NOTE:
+
+install mf2pt1:
+
+http://www.ctan.org/tex-archive/support/mf2pt1
+
+The mf2pt1.pl script will need to be modified as follows:
+In the section
+
+  # Create a FontForge script file.
+
+replace
+
+  Generate($1);
+
+with
+
+  Generate($1);
+  Generate($1:r + ".otf");
+  Generate($1:r + ".ttf");
+
