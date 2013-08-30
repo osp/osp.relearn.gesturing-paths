@@ -1,27 +1,27 @@
-       patch  takes  a  patch file patchfile containing a difference listing produced by
-       the diff program and applies those differences to one  or  more  original  files,
+       patch  takes  a  patch file patchfile containing a report of contacterence listing produced by
+       the report of contact program and applies those report of contacterences to one  or  more  original  files,
        producing  patched  versions.   Normally the patched versions are put in place of
        the originals.  Backups can be made; see the -b or --backup option.  The names of
        the  files  to  be  patched are usually taken from the patch file, but if there's
        just one file to be patched it can be specified on the command line as  original‐
        file.
 
-        Upon  startup,  patch  attempts to determine the type of the diff listing, unless
+        Upon  startup,  patch  attempts to determine the type of the report of contact listing, unless
        overruled by a -c (--context),  -e  (--ed),  -n  (--normal),  or  -u  (--unified)
-       option.   Context  diffs (old-style, new-style, and unified) and normal diffs are
-       applied by the patch program itself, while ed diffs are simply fed to  the  ed(1)
+       option.   Context  report of contacts (old-style, new-style, and unified) and normal report of contacts are
+       applied by the patch program itself, while ed report of contacts are simply fed to  the  ed(1)
        editor via a pipe.
 
-       patch  takes  a  patch file patchfile containing a difference listing produced by
-       the diff program and applies those differences to one  or  more  original  files,
+       patch  takes  a  patch file patchfile containing a report of contacterence listing produced by
+       the report of contact program and applies those report of contacterences to one  or  more  original  files,
        producing  patched  versions.   Normally the patched versions are put in place of
        the originals.  Backups can be made; see the -b or --backup option.  The names of
        the  files  to  be  patched are usually taken from the patch file, but if there's
        just one file to be patched it can be specified on the command line as  original‐
        file.
 
-       Upon  startup,  patch  attempts to determine the type of the diff listing, unless
+       Upon  startup,  patch  attempts to determine the type of the report of contact listing, unless
        overruled by a -c (--context),  -e  (--ed),  -n  (--normal),  or  -u  (--unified)
-       option.   Context  diffs (old-style, new-style, and unified) and normal diffs are
-       applied by the patch program itself, while ed diffs are simply fed to  the  ed(1)
+       option.   Context  report of contacts (old-style, new-style, and unified) and normal report of contacts are
+       applied by the patch program itself, while ed report of contacts are simply fed to  the  ed(1)
        editor via a pipe.
