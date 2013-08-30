@@ -1,0 +1,44 @@
+% a very basic metafont setup
+w#:=10pt#;
+font_quad:=8pt#;
+designsize:=20pt#;  % global dimension definitions
+u#:=1pt#;
+
+
+
+
+mode=luxo;
+mode_setup;
+define_pixels(s,u);
+define_blacker_pixels(px,py);
+%path module, moduleA, moduleB, moduleC, moduleD, moduleE, moduleF;
+def z1 = (0u,0u) enddef;
+def z2 = (0u,15u) enddef;
+def z3 = (3u, 0u) enddef;
+def z4 = (6u, 0u) enddef;
+%z5 = z3;
+def module  = z1..z2 enddef; 
+def moduleA = (0u,8u)..(4u,10u)..(7u,6u)--(7u,0u) enddef;
+def moduleB = z1 --(0u,10u) enddef;
+def moduleC = (8u,0u) .. (0u,5u) .. (8u,10u) enddef; 
+def moduleD = (0u,10u) -- (7u,10u) enddef; 
+def moduleE = z1 -- (4u, 15u) enddef;
+def moduleF = z1 -- z3 -- z4 enddef;
+
+
+% pen settings %
+
+pickup pencircle xscaled 50 yscaled 100 rotated -40;
+mypen:=savepen;
+% begin charater macro %
+
+def beginmychar(expr code, unit_width, h, d) =
+beginchar(code,unit_width*u#,h,d);
+pickup mypen;
+enddef;
+
+% characters: copy paste input for new glyph 
+
+input modules
+
+end.

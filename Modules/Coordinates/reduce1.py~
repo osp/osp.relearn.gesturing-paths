@@ -33,13 +33,15 @@ else:
 			else: 
 				for x in xmatch: # finds every  x co-ordinate
     					everyx.append(int(x))                       
-
-			ymatch = re.findall(r",\s*(\d+)\s*\)", text)
-			if not ymatch:
-				continue
-			else:
-				for y in ymatch:  #finds every number preceeding a closing bracket (ie, all the y co-ordinates)
-					everyy.append(int(y))
+##		# and the average y coordinate:
+#		ymatch = re.findall(r":\s*=\s*\(\s*\d+\s*\,\s*(\d+)\s*\)", text)
+#(40,0)
+		ymatch = re.findall(r",\s*(\d+)\s*\)", text)
+		if not ymatch:
+			continue
+		else:
+			for y in ymatch:  #finds every number preceeding a closing bracket (ie, all the y co-ordinates)
+				everyy.append(int(y))
 
 
 

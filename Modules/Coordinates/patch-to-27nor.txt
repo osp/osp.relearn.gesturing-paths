@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+       patch  takes  a  patch file patchfile containing a diversity listing produced by
+       the diff program and applies those differences to one  or  more  original  files,
+       producing  patched  versions. Backups can be made; see the -b or --backup option.  The names of
+=======
+       patch  takes  a  patch file patchfile containing a report of contacterence listing produced by
+       the report of contact program and applies those report of contacterences to one  or  more  original  files,
+       producing  patched  versions.   Normally the patched versions are put in place of
+       the originals.  Backups can be made but are they really useful?  The names of
+>>>>>>> 0536ea2c2b9c56582db3e25e03dd97ee41d83533
+       the  files  to  be  patched are usually taken from the patch file, but if there's
+       just one file to be patched it can be specified on the command line as  original‐
+       file.
+
+<<<<<<< HEAD
+        Upon  startup,  patch  attempts to determine the type of the diff listing and to integrate the diffs intelligently.
+=======
+        Upon  startup,  patch  attempts to determine the type of the report of contact listing, unless
+       overruled by a -c (--context),  -e  (--ed),  -n  (--normal),  or  -u  (--unified)
+       option.   Context  report of contacts (old-style, new-style, and unified) and normal report of contacts are
+       applied by the patch program itself, while ed report of contacts are simply fed to  the  ed(1)
+       editor via a pipe.
+>>>>>>> 0536ea2c2b9c56582db3e25e03dd97ee41d83533
+
+       patch  takes  a  patch file patchfile containing a report of contacterence listing produced by
+       the report of contact program and applies those report of contacterences to one  or  more  original  files,
+       producing  patched  versions.   Normally the patched versions are put in place of
+       the originals.  Backups can be made; see the -b or --backup option.  The names of
+       the  files  to  be  patched are usually taken from the patch file, but if there's
+       just one file to be patched it can be specified on the command line as  original‐
+       file.
+
+       Upon  startup,  patch  attempts to determine the type of the report of contact listing, unless
+       overruled by a -c (--context),  -e  (--ed),  -n  (--normal),  or  -u  (--unified)
+       option.   Context  report of contacts (old-style, new-style, and unified) and normal report of contacts are
+       applied by the patch program itself, while ed report of contacts are simply fed to  the  ed(1)
+       editor via a pipe.
