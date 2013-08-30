@@ -8,7 +8,8 @@
 \geometry{top=5cm}
 \begin{document}
 \pagestyle{empty}
-\tt       %% a typemachine version of the basic Metafont typeface
+\tt       %% a typemachine version of the basic Metafont typeface Computer Modern
+\font\tinyfont=cmr5 at 20pt
 
 \scriptsize
 
@@ -17,17 +18,15 @@
 \noindent
 \begin{tabbing}
 
-MetaFlop Scpeci \= Environment \= \kill
 
-LORAINE \\  % Username
 
-This is the first column content
+first column \\  % \\ column break
 
-This is the second column content
+second column \\
 
-This is the third column content
+third column \\
 
-This is the fourth column content
+fourth column
 
     
 \end{tabbing}
@@ -40,9 +39,9 @@ This is the fourth column content
 
 \noindent 
  \begin{center}
-
-I M WRITING THIS DIRECTLY IN THE TEX FILE
-
+METAFONT POSTER
+\tinyfont
+METAFONT BIG
 \end{center}
 
 \end{document}

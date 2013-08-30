@@ -8,7 +8,8 @@
 \geometry{top=5cm}
 \begin{document}
 \pagestyle{empty}
-\tt       %% a typemachine version of the basic Metafont typeface
+\tt       %% a typemachine version of the basic Metafont typeface Computer Modern
+\font\tinyfont=cmr at 20pt
 
 \scriptsize
 
@@ -17,11 +18,17 @@
 \noindent
 \begin{tabbing}
 
-MetaFlop Scpeci \= Environment \= \kill
 
-METAFLOP \\  % Username
 
-\input{testTex-tabbing.txt} % input parameter list    
+first column \\  % \\ column break
+
+second column \\
+
+third column \\
+
+fourth column
+
+    
 \end{tabbing}
 \end{multicols}
 \noindent
@@ -32,9 +39,9 @@ METAFLOP \\  % Username
 
 \noindent 
  \begin{center}
-
-I M WRITING THIS DIRECTLY IN THE TEX FILE
-
+METAFONT POSTER
+\tinyfont
+METAFONT BIG
 \end{center}
 
 \end{document}

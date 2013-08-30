@@ -10,7 +10,6 @@
 \tt % a type machine version of basic Metafont typeface.
 
 \font\tiny=font at 20pt     % Font to test // tiny, small
-\font\big=font at 200pt
 % \baselineskip=203pt
 \big  
 % \begin{center}
@@ -20,9 +19,6 @@
 % text for specimen:
 
 
-Discover HERSHEY'S Chocolate Brand products, recipes, seasonal \vspace{0.2}specials, nutrition information, watch commercials and much more
-
-\tiny
 Discover HERSHEY'S Chocolate Brand products, recipes, seasonal \vspace{0.2}specials, nutrition information, watch commercials and much more
 
 \input{testTeXrourr.txt} % insert text
