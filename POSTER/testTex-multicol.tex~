@@ -1,0 +1,47 @@
+\documentclass[a4paper]{report}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{multicol}
+\fontencoding {OT1}
+%\usepackage{mftinc}      %% try to include pretty print code
+
+\geometry{top=5cm}
+\begin{document}
+\pagestyle{empty}
+\tt       %% a typemachine version of the basic Metafont typeface Computer Modern
+\font\tinyfont=cmr at 20pt
+
+\scriptsize
+
+\begin{multicols}{4}
+\raggedcolumns
+\noindent
+\begin{tabbing}
+
+
+
+first column \\  % \\ column break
+
+second column \\
+
+third column \\
+
+fourth column
+
+    
+\end{tabbing}
+\end{multicols}
+\noindent
+\vspace{.5cm}
+\hrulefill
+\vspace{2cm}
+
+
+\noindent 
+ \begin{center}
+METAFONT POSTER
+\tinyfont
+METAFONT BIG
+\end{center}
+
+\end{document}
