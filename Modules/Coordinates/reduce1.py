@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding:utf-8 -*-
  
-import re, sys, os
+import re, sys
 from subprocess import call
 
  
@@ -33,15 +33,13 @@ else:
 			else: 
 				for x in xmatch: # finds every  x co-ordinate
     					everyx.append(int(x))                       
-##		# and the average y coordinate:
-#		ymatch = re.findall(r":\s*=\s*\(\s*\d+\s*\,\s*(\d+)\s*\)", text)
-#(40,0)
-		ymatch = re.findall(r",\s*(\d+)\s*\)", text)
-		if not ymatch:
-			continue
-		else:
-			for y in ymatch:  #finds every number preceeding a closing bracket (ie, all the y co-ordinates)
-				everyy.append(int(y))
+
+			ymatch = re.findall(r",\s*(\d+)\s*\)", text)
+			if not ymatch:
+				continue
+			else:
+				for y in ymatch:  #finds every number preceeding a closing bracket (ie, all the y co-ordinates)
+					everyy.append(int(y))
 
 
 
@@ -74,14 +72,13 @@ prologues := 3;
 
 beginfig(1)
 	""" + "fill (0,0) -- (" + highx + "," + "0) -- (" + highx + "," + highy +") -- (0," + highy + ") -- cycle withcolor white; " + """
-    draw """ + avecoords + """ withpen pencircle scaled 4bp ; 
+    draw """ + avecoords + """ withpen pencircle scaled 15bp ; 
 endfig;
 
 end
 
 """
 # save newDrawing as an .mp file
-newfilename = date + "blahblah.mp"
 f = open("reducedDrawing.mp", 'w')
 f.write(newDrawing)
 f.close()
@@ -89,9 +86,9 @@ f.close()
 
 # and shell out to convert it to an image
 #call("cd ~/relearn/relearn.gesturing-paths/Modules/Coordinates; mpost reducedDrawing.mp", shell=True)
-call("mpost" + newnamefile reducedDrawing.mp ", shell=True)  # << this works
+call("mpost reducedDrawing.mp", shell=True)  # << this works
 
-print "		Success! An averaged drawing has been saved as reducedDrawing"
+print "\n	Success! An averaged drawing has been saved as 'reducedDrawing'. \n"
 
 
 

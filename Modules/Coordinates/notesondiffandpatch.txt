@@ -1,0 +1,58 @@
+linus: "i don't like to work with this other people"
+bitkeeper
+
+not a collaborative tool
+
+get the source tree clean
+
+e-mail -- to him
+
+mailinglist
+
+main use is through github
+
+subversion: 
+3 options 
+
+git 
+
+subversion, diff and patch
+
+diff -u ("universal" for machines and people)
+
+man diff
+
+cvs a collection of diffs
+
+but binaries are blobs
+
+reversability -- conversaton of netart
+
+HEAD is last version
+
+everything that is considered not binary is diffed
+
+default diff
+different diffs
+
+the line is the basic unit (not character, word)
+
+$ patch -p0 --verbose < test.diff
+
+committing diffs
+
+diff (without -u: abstract!)
+
+A Hunk --- a piece broken from something
+
+Plan A ... there is no plan B?
+
+splitdiff
+
+a diff file on a directory
+
+
+
+
+
+
