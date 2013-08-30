@@ -1,0 +1,20 @@
+%modules
+
+beginmychar("c",w#,w#,0);
+draw moduleC;
+endchar;
+
+beginmychar("n",w#,w#,0);
+draw moduleA;
+draw moduleB;
+endchar;
+
+beginmychar("h",w#,w#,0);
+draw module;
+draw moduleA;
+endchar;
+
+beginmychar("d",w#,w#,0);
+draw module;
+draw moduleC;
+endchar;
