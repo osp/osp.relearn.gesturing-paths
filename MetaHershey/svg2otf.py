@@ -1,5 +1,7 @@
 # Transforms a collection of SVG-files to an OTF-font
+# it takes two arguments the name of the file we 
 
+import re
 import fontforge
 import glob
 import string
@@ -21,7 +23,7 @@ for svgFilePath in glob.glob ('{0}/*.svg'.format (svgdir)):
 	unicodeMatch = re.search ('(\d+)\.svg', svgFilePath)
 	
 	if unicodeMatch <> None:
-		unicodePoint = unicodeMatch.group (1)
+		unicodePoint = int (unicodeMatch.group (1))
 		glyph = font.createChar (unicodePoint)
 		glyph.importOutlines(svgFilePath)
 
