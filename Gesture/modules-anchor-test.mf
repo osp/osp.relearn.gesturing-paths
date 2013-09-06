@@ -1,0 +1,57 @@
+%modules
+
+beginmychar(ASCII"a",w#,w#,0);
+draw moduleA;
+draw moduleC;
+endchar;
+
+beginmychar(ASCII"b",w#,w#,0);
+draw module;
+draw moduleC rotated 180 shifted (8u,10u);
+endchar;
+
+beginmychar(ASCII"c",w#,w#,0);
+draw moduleC;
+endchar;
+
+beginmychar(ASCII"d",w#,w#,0);
+draw moduleC;
+draw module shifted (8u,0u);
+endchar;
+
+beginmychar(ASCII"e",w#,w#,0);
+draw moduleC;
+draw moduleB rotated 90 shifted (10u,5u);
+endchar;
+
+beginmychar(ASCII"n",w#,w#,0);
+draw moduleA;
+draw moduleB;
+endchar;
+
+beginmychar(ASCII"m",14u#,w#,0);
+draw moduleA;
+draw moduleB;
+draw moduleA shifted (7u,0u);
+endchar;
+
+beginmychar(ASCII"h",w#,w#,0);
+draw module;
+draw moduleA;
+endchar;
+
+beginmychar(ASCII"i",w#,w#,0);
+draw moduleB;
+draw moduleF;
+endchar;
+
+
+beginmychar(ASCII"o",12u#,w#,0);
+draw moduleC;
+draw moduleC rotated 180 shifted (11u,10u);
+endchar;
+
+beginmychar(ASCII"u",w#,w#,0);
+draw moduleA rotated 180 shifted (7u,10u);
+draw moduleB rotated 180 shifted (7u,10u);
+endchar;

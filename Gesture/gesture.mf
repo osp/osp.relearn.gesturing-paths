@@ -1,24 +1,33 @@
-import fontforge
-import glob
-import string
-from sys import argv
+% a very basic metafont setup
+w#:=10pt#;
+font_quad:=8pt#;
+designsize:=20pt#;  % global dimension definitions
+u#:=1pt#;
 
-name = argv[1]
-path = argv[2]
+mode=luxo;
+mode_setup;
+define_pixels(s,u);
+define_blacker_pixels(px,py);
+path module, moduleA, moduleB, moduleC, moduleD, moduleE;
+module  = (0u,0u)..(0u,15u); 
+moduleA = (0u,8u)..(4u,10u)..(7u,6u)--(7u,0u);
+moduleB = (0u,0u)--(0u,10u);
+moduleC = (8u,0u) .. (0u,5u) .. (8u,10u); 
+moduleD = (0u,10u) -- (7u,10u); 
+moduleE = (0u,0u) -- (4u, 15u);
 
-font = fontforge.font()
-font.fontname = name
-font.fondname = name
-font.fullname = name
-font.familyname = name
 
-for outlinefile in glob.glob ('{0}/*.svg'.format (path)):
-	glyph = font.createChar (-1, charstring[counter])
-	glyph.importOutlines(outlinefile)
-	counter += 1 
+% pen settings %
 
-	if counter > len(charstring):
-		break
-		
-font.save ("{0}.sfd".format (name))
-font.generate ("{0}.otf".format (name)) 
+pickup pencircle xscaled 50 yscaled 100 rotated -40;
+mypen:=savepen;
+% begin charater macro %
+
+def beginmychar(expr code, unit_width, h, d) =
+beginchar(code,unit_width*u#,h,d);
+pickup mypen;
+enddef;
+
+input modules
+
+end.

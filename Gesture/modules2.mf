@@ -1,0 +1,21 @@
+%modules
+
+beginmychar(ASCII"c",w#,w#,0);
+
+draw moduleC;
+endchar;
+
+beginmychar(ASCII"n",w#,w#,0);
+draw moduleA;
+draw moduleB;
+endchar;
+
+beginmychar(ASCII"h",w#,w#,0);
+draw module;
+draw moduleA;
+endchar;
+
+beginmychar(ASCII"d",w#,w#,0);
+draw module;
+draw moduleC;
+endchar;

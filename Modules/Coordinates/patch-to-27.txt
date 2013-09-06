@@ -1,0 +1,27 @@
+       PATCH  takes  A  PATCH file PATCHfile containing A difference listing produced by
+       the diff program and applies those differences to one  or  more  original  files,
+       producing  PATCHed  vers                  SUPER                       ions.   Normally the PATCHed versions are put in place of
+       the originals.  Backups can be made but are they really useful?  The names of
+       the  files  to  be  PATCHed are usually taken from the PATCH file, but if there's
+       just one file to be PATCHed it can be specified on the command line as  original‐
+       file.
+
+        Upon  startup,  PATCH  attempts to determine the type of the diff listing, unless
+       overruled by A -c (--context),  -e  (--ed),  -n  (--normal),  or  -u  (--unified)
+       option.   Context  diffs (old-style, new-style, and unified) and normal diffs are
+       applied by the PATCH program itself, while ed diffs are simply fed to  the  ed(1)
+       editor via A pipe.
+
+       PATCH  takes  A  PATCH file PATCHfile containing A difference listing produced by
+       the diff program and applies those differences to one  or  more  original  files,
+       producing  PATCHed  versions.   Normally the PATCHed versions are put in place of
+       the originals.  Backups can be made; see the -b or --backup option.  The names of
+       the  files  to  be  PATCHed are usually taken from the PATCH file, but if there's
+       just one file to be PATCHed it can be specified on the command line as  original‐
+       file.
+
+       Upon  startup,  PATCH  attempts to determine the type of the diff listing, unless
+       overruled by A -c (--context),  -e  (--ed),  -n  (--normal),  or  -u  (--unified)
+       option.   Context  diffs (old-style, new-style, and unified) and normal diffs are
+       applied by the PATCH program itself, while ed diffs are simply fed to  the  ed(1)
+       editor via A pipe.
