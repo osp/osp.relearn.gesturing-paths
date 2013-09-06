@@ -1,17 +1,24 @@
-% a very basic metafont setup
+import fontforge
+import glob
+import string
+from sys import argv
 
-mode_setup; q:=savepen; 
-w#:=2.5pt#; font_quad:=w#; designsize:=8w#;  % global dimension definitions
+name = argv[1]
+path = argv[2]
 
-% characters: copy paste input for new glyph 
+font = fontforge.font()
+font.fontname = name
+font.fondname = name
+font.fullname = name
+font.familyname = name
 
-input a
-input b
-input c
-input 5
-input S
-input A
-input Z
+for outlinefile in glob.glob ('{0}/*.svg'.format (path)):
+	glyph = font.createChar (-1, charstring[counter])
+	glyph.importOutlines(outlinefile)
+	counter += 1 
 
-end.
-
+	if counter > len(charstring):
+		break
+		
+font.save ("{0}.sfd".format (name))
+font.generate ("{0}.otf".format (name)) 
