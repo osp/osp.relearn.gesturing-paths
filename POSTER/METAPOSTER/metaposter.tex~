@@ -10,15 +10,14 @@
 \begin{document}
 \pagestyle{empty}
 \tt       %% a typemachine version of the basic Metafont typeface Computer Modern
-\font\tinyfont=cmr5 at 20pt
+\font\tinyfont=cmr5 at 200pt
 
 \scriptsize
 
 \noindent 
  \begin{center}
-METAFONT \\POST\\ER
 \tinyfont
-METAFONT BIG
+METAPOSTER
 \end{center}
 \vspace{.5cm}
 
@@ -26,29 +25,21 @@ METAFONT BIG
 \begin{multicols*}{2}
 \addtolength{\linewidth}{1in}
 
-prologues := 3;     % sortie EPS
-
-beginfig(6);
-pickup penrazor xscaled 1pt yscaled 2pt rotated -45 ;
-draw (2,2)--(4,4)--(6,6)--(8,8)--(10,10) withcolor green;
-draw (2,4)--(4,-2)--(6,-4)--(8,-6)--(10,8);
-draw (2,6)--(4,6)--(6,-2)--(8,-4)--(10,-6) withcolor green;
-draw (2,8)--(4,8)--(6,8)--(8,-2)--(10,-4);
-draw (2,10)--(4,10)--(6,10)--(8,10)--(10,-2);
-endfig;
-end
+elementline.mp\\
+\\
+beginfig(1);\\
+draw (1,1)--(1,2);\\
+endfig;\\
+end\\
 
 
 \vfill
 \columnbreak
 
-\includegraphics[trim = 10mm 80mm 20mm 5mm, clip=true, width=3cm]{images/mpost}
+\includegraphics[width=10cm]{elements/elementline}
 
 \end{multicols*}
 \noindent
-
-\hrulefill
-\vspace{2cm}
 
 
 \end{document}

@@ -1,0 +1,7 @@
+import os 
+print " starting make pdf script "
+print "------------------------------------------------------"
+os.system("latex -output-format='pdf' metaposteer-line.tex")
+print "Done! :-)"
+
+

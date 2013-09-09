@@ -1,6 +1,7 @@
 \documentclass[a4paper]{report}
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath}
+\usepackage{graphicx}
 \usepackage{multicol}
 \fontencoding {OT1}
 %\usepackage{mftinc}      %% try to include pretty print code
@@ -9,28 +10,32 @@
 \begin{document}
 \pagestyle{empty}
 \tt       %% a typemachine version of the basic Metafont typeface Computer Modern
-\font\tinyfont=cmr at 20pt
+\font\tinyfont=cmr5 at 20pt
 
 \scriptsize
-
-\begin{multicols}{4}
-\raggedcolumns
 \noindent
-\begin{tabbing}
+\begin{multicols*}{2}
+\addtolength{\linewidth}{1in}
+
+prologues := 3;     % sortie EPS
+
+beginfig(6);
+pickup penrazor xscaled 1pt yscaled 2pt rotated -45 ;
+draw (2,2)--(4,4)--(6,6)--(8,8)--(10,10) withcolor green;
+draw (2,4)--(4,-2)--(6,-4)--(8,-6)--(10,8);
+draw (2,6)--(4,6)--(6,-2)--(8,-4)--(10,-6) withcolor green;
+draw (2,8)--(4,8)--(6,8)--(8,-2)--(10,-4);
+draw (2,10)--(4,10)--(6,10)--(8,10)--(10,-2);
+endfig;
+end
 
 
+\vfill
+\columnbreak
 
-first column \\  % \\ column break
+\includegraphics[trim = 10mm 80mm 20mm 5mm, clip=true, width=3cm]{images/mpost}
 
-second column \\
-
-third column \\
-
-fourth column
-
-    
-\end{tabbing}
-\end{multicols}
+\end{multicols*}
 \noindent
 \vspace{.5cm}
 \hrulefill
@@ -39,7 +44,7 @@ fourth column
 
 \noindent 
  \begin{center}
-METAFONT POSTER
+METAFONT \\POST\\ER
 \tinyfont
 METAFONT BIG
 \end{center}

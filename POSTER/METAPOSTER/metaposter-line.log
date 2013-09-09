@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.8.25)  30 AUG 2013 16:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.8.25)  2 SEP 2013 14:12
 entering extended mode
  %&-line parsing enabled.
-**testTex-multicol.tex
-(./testTex-multicol.tex
+**metaposter-line.tex
+(./metaposter-line.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
@@ -173,8 +173,8 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \multicolundershoot=\dimen125
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
-) (./testTex-multicol.aux)
-\openout1 = `testTex-multicol.aux'.
+) (./metaposter-line.aux)
+\openout1 = `metaposter-line.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -188,7 +188,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
-
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
 -------------------- Geometry parameters
@@ -242,53 +241,25 @@ driver: pdftex
 \MPscratchDim=\dimen127
 \MPnumerator=\count116
 \everyMPtoPDFconversion=\toks22
-)
-Underfull \hbox (badness 10000) in paragraph at lines 22--31
-[]\OT1/cmtt/m/n/7 beginfig(6); pickup penrazor xscaled 1pt yscaled 2pt
- []
+) <elements/elementline.jpg, id=1, 2.0075pt x 3.01125pt>
+File: elements/elementline.jpg Graphic file (type jpg)
 
+<use elements/elementline.jpg> [1
 
-Overfull \hbox (1.1545pt too wide) in paragraph at lines 22--31
-\OT1/cmtt/m/n/7 rotated -45 ; draw (2,2)--(4,4)--(6,6)--(8,8)--(10,10) withcolo
-r
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--31
-\OT1/cmtt/m/n/7 green; draw (2,4)--(4,-2)--(6,-4)--(8,-6)--(10,8); draw
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--31
-\OT1/cmtt/m/n/7 (2,6)--(4,6)--(6,-2)--(8,-4)--(10,-6) withcolor green; draw
- []
-
-
-Overfull \hbox (71.81161pt too wide) in paragraph at lines 22--31
-\OT1/cmtt/m/n/7 (2,8)--(4,8)--(6,8)--(8,-2)--(10,-4); draw (2,10)--(4,10)--(6,1
-0)--(8,10)--(10,-2);
- []
-
-<images/mpost.jpeg, id=1, 770.88pt x 770.88pt>
-File: images/mpost.jpeg Graphic file (type jpg)
- <use images/mpost.jpeg> [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/mpost.jpeg>] [2]
-(./testTex-multicol.aux) ) 
+ <./elements/elementline.jpg>]
+(./metaposter-line.aux) ) 
 Here is how much of TeX's memory you used:
- 1981 strings out of 495062
- 25068 string characters out of 1182644
- 82398 words of memory out of 3000000
- 5179 multiletter control sequences out of 15000+50000
- 4257 words of font info for 17 fonts, out of 3000000 for 9000
+ 1974 strings out of 495062
+ 25036 string characters out of 1182644
+ 81398 words of memory out of 3000000
+ 5177 multiletter control sequences out of 15000+50000
+ 3940 words of font info for 15 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,5n,32p,233b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb
->
-Output written on testTex-multicol.pdf (2 pages, 91687 bytes).
+ 27i,4n,32p,232b,110s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on metaposter-line.pdf (1 page, 3993 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
+ 7 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 12 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

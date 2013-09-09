@@ -9,6 +9,20 @@
 \pagestyle{empty}
 \tt % a type machine version of basic Metafont typeface.
 
+prologues := 3;     % sortie EPS
+
+beginfig(6);
+pickup penrazor xscaled 1pt yscaled 2pt rotated -45 ;
+draw (2,2)--(4,4)--(6,6)--(8,8)--(10,10) withcolor green;
+draw (2,4)--(4,-2)--(6,-4)--(8,-6)--(10,8);
+draw (2,6)--(4,6)--(6,-2)--(8,-4)--(10,-6) withcolor green;
+draw (2,8)--(4,8)--(6,8)--(8,-2)--(10,-4);
+draw (2,10)--(4,10)--(6,10)--(8,10)--(10,-2);
+endfig;
+end
+
+
+
 \font\tiny=font at 20pt     % Font to test // tiny, small
 \font\big=font at 200pt
 % \baselineskip=203pt

@@ -1,0 +1,7 @@
+
+beginfig(1);
+draw (2,2)--(4,4);
+endfig;
+end
+
+
